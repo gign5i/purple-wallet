@@ -6,10 +6,14 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "private": true,
-  "packageManager": "bun@1.1.38",
+  "packageManager": "npm",
   "dependencies": {
     "@angular/common": "^21.2.0",
     "@angular/compiler": "^21.2.0",
@@ -17,6 +21,9 @@
     "@angular/forms": "^21.2.0",
     "@angular/platform-browser": "^21.2.0",
     "@angular/router": "^21.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "prettier-eslint": "^17.1.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
@@ -24,9 +31,13 @@
     "@angular/build": "^21.2.26",
     "@angular/cli": "^21.2.26",
     "@angular/compiler-cli": "^21.2.0",
+    "@eslint/js": "^10.0.1",
+    "angular-eslint": "21.4.0",
+    "eslint": "^10.3.0",
     "jsdom": "^28.0.0",
-    "prettier": "^3.8.1",
+    "prettier": "3.9.10",
     "typescript": "~5.9.2",
+    "typescript-eslint": "8.59.2",
     "vitest": "^4.0.8"
   }
 }
