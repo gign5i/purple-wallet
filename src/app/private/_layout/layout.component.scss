@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.dashboard__root {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: .25fr 1fr;
+}
+
+.dashboard__overlay {
+  padding: 10px 30px;
+  background-color: #31353F;
+}

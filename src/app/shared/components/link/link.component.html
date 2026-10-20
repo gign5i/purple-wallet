@@ -1,0 +1,8 @@
+<button [ngClass]="{ link__root: true, link__active: isActive() }">
+  @if (iconSrc) {
+    <img [ngSrc]="iconSrc" width="36" height="36" alt="icon" />
+  }
+  <span class="link__text">
+    {{ label }}
+  </span>
+</button>

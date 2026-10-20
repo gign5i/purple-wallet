@@ -1,0 +1,25 @@
+.link__root {
+  background: none;
+  border: none;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  padding: 15px 20px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 8px;
+  &:hover {
+    background-color: #3a6ff8;
+  }
+}
+
+.link__active {
+  background-color: #3a6ff8;
+  font-weight: 600;
+}
+
+.link__text {
+  text-decoration: none;
+}

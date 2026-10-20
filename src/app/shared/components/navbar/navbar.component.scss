@@ -1,0 +1,19 @@
+.navbar__root {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  background-color: #1b2028;
+  padding: 0 25px 0;
+  flex: 1;
+}
+
+.navbar__logo {
+  object-position: center;
+  object-fit: contain;
+}
+
+.navbar__logout {
+  margin-top: auto;
+  margin-bottom: 20px;
+}

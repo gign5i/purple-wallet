@@ -1,0 +1,17 @@
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 60px;
+}
+
+.form__header {
+  text-align: center;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

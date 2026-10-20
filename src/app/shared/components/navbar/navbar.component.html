@@ -1,0 +1,7 @@
+<nav class="navbar__root">
+  <img ngSrc="/logo/Logo.svg" width="245" height="90" alt="logo" class="navbar__logo" />
+  @for (item of navbarConfig; track item.path) {
+    <app-link [routerLink]="item.path" [iconSrc]="item.iconSrc" [label]="item.label" routerLinkActive="active" />
+  }
+  <app-link class="navbar__logout" href="login" iconSrc="/icons/logout.svg" label="Выйти"  />
+</nav>

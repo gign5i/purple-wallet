@@ -1,0 +1,32 @@
+.layout_root {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.layout_left-side {
+  position: relative;
+  background-image: url('/backgrounds/planets-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layout_logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.layout_right-side {
+  border-left: 1px solid #29313d;
+  background-color: #1b2028;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -5px -2px 14px 8px rgba(25, 25, 25, 0.6705882353);
+  z-index: 10;
+}
