@@ -1,0 +1,19 @@
+<div class="form__control">
+  <div class="form__icon">
+    @if (iconUrl()) {
+      <img [src]="iconUrl()" width="30" height="30" [alt]="type()" />
+    }
+  </div>
+  <input
+  class="form__input"
+  [type]="currentType"
+  [placeholder]="placeholder()"
+  [disabled]="disabled()"
+  [(ngModel)]="value"
+  (input)="onInput($any($event.target).value)" />
+  @if(type() === 'password') {
+    <button type="button" (click)="onShowPassword()" class="form__password_show_btn">
+      <img width="30" height="30" [src]="showPassword ? '/icons/Eye_Closed.svg' : '/icons/Eye.svg'" alt="show-password-icon" />
+    </button>
+  }
+</div>
